@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Упражнение 5</title>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <basefont face="Times" size="3">
+    <p>Анкету составила: Кистанова Екатерина Ивановна</p>
+    <h1>Анкета</h1>
+    <table border="1px solid black" width="50%" align="center">
+        <th colspan="2">Личные данные</th>
+        <th colspan="2">Неличные данные</th>
+        <tr>
+            <td>
+                <p>Имя:</p>
+                <p>Фамилия:</p>
+                <p>Отчество:</p>
+            </td>
+            <td>
+                <form name="Anketa">
+                    <p align="center"><input type="text" name="text1"></p>
+                    <p align="center"><input type="text" name="text2"></p>
+                    <p align="center"><input type="text" name="text3"></p>
+            </td>
+            <td>В какой программе вы работаете <p><input type="checkbox" name="note" id="1"> Notepad++</p>
+                <p><input type="checkbox" name="explorer" id="2"> Enternet Explorer</p>
+            </td>
+            <td>Любите ли вы информатику <p><input type="radio" name="love" value="Вы любите информатику"> Да</p>
+                <p><input type="radio" name="love" value="Вы не любите информатику, а зря("> Нет</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p align="center"><input type="button" value="Отправить" onClick="test1(this.form)">
+            </td>
+            <td colspan="2">
+                <p align="center"><input type="reset" value="Очистить"></p>
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+
+</html>
